@@ -18,8 +18,8 @@ final class FeedCoordinator: CoordinatorProtocol {
         
         let vc = HomeController.instantiateFromStoryboard()
         vc.coordinator = self
-        vc.tabBarItem.image = UIImage(named: "ic_home")
-        vc.title = "Home"
+        vc.tabBarItem.image = UIImage(named: "feedIcon")
+        vc.title = "Feed"
         
         self.navigationController?.viewControllers = [vc]
         

@@ -18,7 +18,7 @@ final class HomeCoordinator: CoordinatorProtocol {
         
         let vc = HomeController.instantiateFromStoryboard()
         vc.coordinator = self
-        vc.tabBarItem.image = UIImage(named: "ic_home")
+        vc.tabBarItem.image = UIImage(named: "homeIcon")
         vc.title = "Home"
         
         self.navigationController?.viewControllers = [vc]

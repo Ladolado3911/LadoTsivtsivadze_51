@@ -18,8 +18,8 @@ final class LibraryCoordinator: CoordinatorProtocol {
         
         let vc = HomeController.instantiateFromStoryboard()
         vc.coordinator = self
-        vc.tabBarItem.image = UIImage(named: "ic_home")
-        vc.title = "Home"
+        vc.tabBarItem.image = UIImage(named: "libraryIcon")
+        vc.title = "Library"
         
         self.navigationController?.viewControllers = [vc]
         

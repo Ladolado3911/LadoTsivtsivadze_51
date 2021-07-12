@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		24BEF650269C715D004C1E04 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BEF64F269C715D004C1E04 /* NetworkManager.swift */; };
 		24BEF653269C7593004C1E04 /* Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BEF652269C7593004C1E04 /* Base.swift */; };
+		24BEF656269C7C8D004C1E04 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BEF655269C7C8D004C1E04 /* HomeViewModel.swift */; };
 		3F72B165269C3FBD006CB0FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F72B164269C3FBD006CB0FB /* AppDelegate.swift */; };
 		3F72B167269C3FBD006CB0FB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F72B166269C3FBD006CB0FB /* SceneDelegate.swift */; };
 		3F72B16E269C3FC1006CB0FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F72B16D269C3FC1006CB0FB /* Assets.xcassets */; };
@@ -33,6 +34,7 @@
 /* Begin PBXFileReference section */
 		24BEF64F269C715D004C1E04 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		24BEF652269C7593004C1E04 /* Base.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Base.swift; sourceTree = "<group>"; };
+		24BEF655269C7C8D004C1E04 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		3F72B161269C3FBD006CB0FB /* LadoTsivtsivadze_51.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LadoTsivtsivadze_51.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F72B164269C3FBD006CB0FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F72B166269C3FBD006CB0FB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -83,6 +85,14 @@
 			path = Base;
 			sourceTree = "<group>";
 		};
+		24BEF654269C7C79004C1E04 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				24BEF655269C7C8D004C1E04 /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		3F72B158269C3FBD006CB0FB = {
 			isa = PBXGroup;
 			children = (
@@ -102,10 +112,10 @@
 		3F72B163269C3FBD006CB0FB /* LadoTsivtsivadze_51 */ = {
 			isa = PBXGroup;
 			children = (
-				3F72B17D269C40BE006CB0FB /* Infrastructure */,
-				3F72B17B269C40AA006CB0FB /* Presentation */,
 				3F72B178269C3FD1006CB0FB /* App */,
+				3F72B17B269C40AA006CB0FB /* Presentation */,
 				3F72B17A269C40A3006CB0FB /* Resources */,
+				3F72B17D269C40BE006CB0FB /* Infrastructure */,
 				3F72B179269C4086006CB0FB /* Supporting FIles */,
 			);
 			path = LadoTsivtsivadze_51;
@@ -180,6 +190,7 @@
 		3F72B180269C414E006CB0FB /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				24BEF654269C7C79004C1E04 /* ViewModel */,
 				3F72B1A6269C44CF006CB0FB /* Coordinator */,
 				3F72B18E269C4200006CB0FB /* View */,
 			);
@@ -348,6 +359,7 @@
 				3F72B194269C42CB006CB0FB /* AppCoordinator.swift in Sources */,
 				3F72B165269C3FBD006CB0FB /* AppDelegate.swift in Sources */,
 				3F72B19F269C43D6006CB0FB /* MainTabbarController.swift in Sources */,
+				24BEF656269C7C8D004C1E04 /* HomeViewModel.swift in Sources */,
 				3F72B198269C42F0006CB0FB /* CoordinatorProtocol.swift in Sources */,
 				3F72B1A4269C44B2006CB0FB /* FeedCoordinator.swift in Sources */,
 				3F72B196269C42E0006CB0FB /* CoordinatorDelegate.swift in Sources */,
