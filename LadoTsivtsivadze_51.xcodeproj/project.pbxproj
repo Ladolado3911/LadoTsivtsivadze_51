@@ -23,6 +23,9 @@
 		3F72B19A269C42FD006CB0FB /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F72B199269C42FD006CB0FB /* Storyboarded.swift */; };
 		3F72B19D269C43BF006CB0FB /* MainTabbarController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F72B19C269C43BF006CB0FB /* MainTabbarController.storyboard */; };
 		3F72B19F269C43D6006CB0FB /* MainTabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F72B19E269C43D6006CB0FB /* MainTabbarController.swift */; };
+		3F72B1A2269C4497006CB0FB /* LibraryCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F72B1A1269C4497006CB0FB /* LibraryCoordinator.swift */; };
+		3F72B1A4269C44B2006CB0FB /* FeedCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F72B1A3269C44B2006CB0FB /* FeedCoordinator.swift */; };
+		3F72B1A8269C44DD006CB0FB /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F72B1A7269C44DD006CB0FB /* HomeCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +47,9 @@
 		3F72B199269C42FD006CB0FB /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
 		3F72B19C269C43BF006CB0FB /* MainTabbarController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainTabbarController.storyboard; sourceTree = "<group>"; };
 		3F72B19E269C43D6006CB0FB /* MainTabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabbarController.swift; sourceTree = "<group>"; };
+		3F72B1A1269C4497006CB0FB /* LibraryCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryCoordinator.swift; sourceTree = "<group>"; };
+		3F72B1A3269C44B2006CB0FB /* FeedCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCoordinator.swift; sourceTree = "<group>"; };
+		3F72B1A7269C44DD006CB0FB /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +166,7 @@
 		3F72B180269C414E006CB0FB /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				3F72B1A6269C44CF006CB0FB /* Coordinator */,
 				3F72B18E269C4200006CB0FB /* View */,
 			);
 			path = Home;
@@ -168,6 +175,7 @@
 		3F72B181269C4153006CB0FB /* Feed */ = {
 			isa = PBXGroup;
 			children = (
+				3F72B1A5269C44B8006CB0FB /* Coordinator */,
 				3F72B189269C41D2006CB0FB /* View */,
 			);
 			path = Feed;
@@ -176,6 +184,7 @@
 		3F72B182269C4161006CB0FB /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				3F72B1A0269C4480006CB0FB /* Coordinator */,
 				3F72B188269C41BF006CB0FB /* View */,
 			);
 			path = Library;
@@ -223,6 +232,30 @@
 				3F72B19E269C43D6006CB0FB /* MainTabbarController.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		3F72B1A0269C4480006CB0FB /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				3F72B1A1269C4497006CB0FB /* LibraryCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		3F72B1A5269C44B8006CB0FB /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				3F72B1A3269C44B2006CB0FB /* FeedCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		3F72B1A6269C44CF006CB0FB /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				3F72B1A7269C44DD006CB0FB /* HomeCoordinator.swift */,
+			);
+			path = Coordinator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -302,10 +335,13 @@
 				3F72B165269C3FBD006CB0FB /* AppDelegate.swift in Sources */,
 				3F72B19F269C43D6006CB0FB /* MainTabbarController.swift in Sources */,
 				3F72B198269C42F0006CB0FB /* CoordinatorProtocol.swift in Sources */,
+				3F72B1A4269C44B2006CB0FB /* FeedCoordinator.swift in Sources */,
 				3F72B196269C42E0006CB0FB /* CoordinatorDelegate.swift in Sources */,
 				3F72B187269C41A3006CB0FB /* LibraryController.swift in Sources */,
 				3F72B19A269C42FD006CB0FB /* Storyboarded.swift in Sources */,
+				3F72B1A8269C44DD006CB0FB /* HomeCoordinator.swift in Sources */,
 				3F72B167269C3FBD006CB0FB /* SceneDelegate.swift in Sources */,
+				3F72B1A2269C4497006CB0FB /* LibraryCoordinator.swift in Sources */,
 				3F72B18D269C41F1006CB0FB /* FeedController.swift in Sources */,
 				3F72B192269C4243006CB0FB /* HomeController.swift in Sources */,
 			);
