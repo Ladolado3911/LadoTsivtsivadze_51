@@ -27,6 +27,8 @@
 		24BEF67E269C86A4004C1E04 /* LibraryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BEF67C269C86A4004C1E04 /* LibraryCell.swift */; };
 		24BEF67F269C86A4004C1E04 /* LibraryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24BEF67D269C86A4004C1E04 /* LibraryCell.xib */; };
 		24BEF687269C8F56004C1E04 /* HomeCollectDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BEF686269C8F56004C1E04 /* HomeCollectDataSource.swift */; };
+		24BEF68D269C904D004C1E04 /* coverCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BEF68B269C904D004C1E04 /* coverCell.swift */; };
+		24BEF68E269C904D004C1E04 /* coverCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24BEF68C269C904D004C1E04 /* coverCell.xib */; };
 		3F72B165269C3FBD006CB0FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F72B164269C3FBD006CB0FB /* AppDelegate.swift */; };
 		3F72B167269C3FBD006CB0FB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F72B166269C3FBD006CB0FB /* SceneDelegate.swift */; };
 		3F72B16E269C3FC1006CB0FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F72B16D269C3FC1006CB0FB /* Assets.xcassets */; };
@@ -69,6 +71,8 @@
 		24BEF67C269C86A4004C1E04 /* LibraryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryCell.swift; sourceTree = "<group>"; };
 		24BEF67D269C86A4004C1E04 /* LibraryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LibraryCell.xib; sourceTree = "<group>"; };
 		24BEF686269C8F56004C1E04 /* HomeCollectDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectDataSource.swift; sourceTree = "<group>"; };
+		24BEF68B269C904D004C1E04 /* coverCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = coverCell.swift; sourceTree = "<group>"; };
+		24BEF68C269C904D004C1E04 /* coverCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = coverCell.xib; sourceTree = "<group>"; };
 		3F72B161269C3FBD006CB0FB /* LadoTsivtsivadze_51.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LadoTsivtsivadze_51.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F72B164269C3FBD006CB0FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F72B166269C3FBD006CB0FB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -132,8 +136,8 @@
 		24BEF65B269C7E84004C1E04 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				24BEF65D269C7EA2004C1E04 /* BestSellingCell */,
-				24BEF65C269C7E9A004C1E04 /* StoryCell */,
+				24BEF68A269C9027004C1E04 /* CollectionCells */,
+				24BEF689269C901F004C1E04 /* TableCells */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -208,6 +212,24 @@
 				24BEF67D269C86A4004C1E04 /* LibraryCell.xib */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		24BEF689269C901F004C1E04 /* TableCells */ = {
+			isa = PBXGroup;
+			children = (
+				24BEF65D269C7EA2004C1E04 /* BestSellingCell */,
+				24BEF65C269C7E9A004C1E04 /* StoryCell */,
+			);
+			path = TableCells;
+			sourceTree = "<group>";
+		};
+		24BEF68A269C9027004C1E04 /* CollectionCells */ = {
+			isa = PBXGroup;
+			children = (
+				24BEF68B269C904D004C1E04 /* coverCell.swift */,
+				24BEF68C269C904D004C1E04 /* coverCell.xib */,
+			);
+			path = CollectionCells;
 			sourceTree = "<group>";
 		};
 		3F72B158269C3FBD006CB0FB = {
@@ -464,6 +486,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				24BEF665269C7F4A004C1E04 /* BestSellingCell.xib in Resources */,
+				24BEF68E269C904D004C1E04 /* coverCell.xib in Resources */,
 				3F72B18B269C41E5006CB0FB /* FeedController.storyboard in Resources */,
 				3F72B171269C3FC1006CB0FB /* LaunchScreen.storyboard in Resources */,
 				3F72B190269C4235006CB0FB /* HomeController.storyboard in Resources */,
@@ -505,6 +528,7 @@
 				24BEF664269C7F4A004C1E04 /* BestSellingCell.swift in Sources */,
 				24BEF660269C7ECF004C1E04 /* StoryCell.swift in Sources */,
 				24BEF66A269C80B8004C1E04 /* FeedDataSource.swift in Sources */,
+				24BEF68D269C904D004C1E04 /* coverCell.swift in Sources */,
 				24BEF668269C8064004C1E04 /* FeedViewModel.swift in Sources */,
 				3F72B1A2269C4497006CB0FB /* LibraryCoordinator.swift in Sources */,
 				24BEF658269C7D3B004C1E04 /* HomeTableDataSource.swift in Sources */,

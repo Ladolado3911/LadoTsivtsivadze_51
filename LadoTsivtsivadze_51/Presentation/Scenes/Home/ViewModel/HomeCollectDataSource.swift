@@ -23,11 +23,14 @@ class HomeCollectDataSource: CollectDataSource {
         collectionView.dataSource = self
         collectionView.delegate = self
         
+        let coverNib = UINib(nibName: "coverCell", bundle: nil)
+        collectionView.register(coverNib, forCellWithReuseIdentifier: "coverCell")
+        
         
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        0
+        5
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
