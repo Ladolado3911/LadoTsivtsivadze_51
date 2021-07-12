@@ -17,7 +17,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w1p-Uw-9Wa">
-                        <rect key="frame" x="0.0" y="0.0" width="413" height="360"/>
+                        <rect key="frame" x="0.0" y="0.0" width="413" height="310"/>
                         <color key="backgroundColor" red="0.90196078431372551" green="0.8901960784313725" blue="0.40392156862745099" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KGz-CR-JuZ">
@@ -43,7 +43,7 @@
                 <constraints>
                     <constraint firstItem="w1p-Uw-9Wa" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="7wn-2M-qzl"/>
                     <constraint firstItem="Co9-MN-6mN" firstAttribute="top" secondItem="KGz-CR-JuZ" secondAttribute="bottom" constant="20" id="BQz-gT-4St"/>
-                    <constraint firstItem="w1p-Uw-9Wa" firstAttribute="bottom" secondItem="Co9-MN-6mN" secondAttribute="bottom" constant="-50" id="DFr-NX-yJY"/>
+                    <constraint firstItem="w1p-Uw-9Wa" firstAttribute="bottom" secondItem="Co9-MN-6mN" secondAttribute="bottom" constant="-100" id="DFr-NX-yJY"/>
                     <constraint firstItem="Co9-MN-6mN" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" id="HhD-PN-n3S"/>
                     <constraint firstAttribute="trailing" secondItem="Co9-MN-6mN" secondAttribute="trailing" id="OT6-fd-KYQ"/>
                     <constraint firstItem="KGz-CR-JuZ" firstAttribute="top" relation="greaterThanOrEqual" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="20" id="fn5-Qw-asj"/>
