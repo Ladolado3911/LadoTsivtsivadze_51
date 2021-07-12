@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		3F72B165269C3FBD006CB0FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F72B164269C3FBD006CB0FB /* AppDelegate.swift */; };
 		3F72B167269C3FBD006CB0FB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F72B166269C3FBD006CB0FB /* SceneDelegate.swift */; };
-		3F72B169269C3FBD006CB0FB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F72B168269C3FBD006CB0FB /* ViewController.swift */; };
-		3F72B16C269C3FBD006CB0FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F72B16A269C3FBD006CB0FB /* Main.storyboard */; };
 		3F72B16E269C3FC1006CB0FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F72B16D269C3FC1006CB0FB /* Assets.xcassets */; };
 		3F72B171269C3FC1006CB0FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F72B16F269C3FC1006CB0FB /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -19,8 +17,6 @@
 		3F72B161269C3FBD006CB0FB /* LadoTsivtsivadze_51.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LadoTsivtsivadze_51.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F72B164269C3FBD006CB0FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F72B166269C3FBD006CB0FB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3F72B168269C3FBD006CB0FB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		3F72B16B269C3FBD006CB0FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3F72B16D269C3FC1006CB0FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F72B170269C3FC1006CB0FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F72B172269C3FC1006CB0FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -56,15 +52,77 @@
 		3F72B163269C3FBD006CB0FB /* LadoTsivtsivadze_51 */ = {
 			isa = PBXGroup;
 			children = (
+				3F72B17D269C40BE006CB0FB /* Infrastructure */,
+				3F72B17B269C40AA006CB0FB /* Presentation */,
+				3F72B178269C3FD1006CB0FB /* App */,
+				3F72B17A269C40A3006CB0FB /* Resources */,
+				3F72B179269C4086006CB0FB /* Supporting FIles */,
+			);
+			path = LadoTsivtsivadze_51;
+			sourceTree = "<group>";
+		};
+		3F72B178269C3FD1006CB0FB /* App */ = {
+			isa = PBXGroup;
+			children = (
 				3F72B164269C3FBD006CB0FB /* AppDelegate.swift */,
 				3F72B166269C3FBD006CB0FB /* SceneDelegate.swift */,
-				3F72B168269C3FBD006CB0FB /* ViewController.swift */,
-				3F72B16A269C3FBD006CB0FB /* Main.storyboard */,
-				3F72B16D269C3FC1006CB0FB /* Assets.xcassets */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		3F72B179269C4086006CB0FB /* Supporting FIles */ = {
+			isa = PBXGroup;
+			children = (
 				3F72B16F269C3FC1006CB0FB /* LaunchScreen.storyboard */,
 				3F72B172269C3FC1006CB0FB /* Info.plist */,
 			);
-			path = LadoTsivtsivadze_51;
+			path = "Supporting FIles";
+			sourceTree = "<group>";
+		};
+		3F72B17A269C40A3006CB0FB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3F72B16D269C3FC1006CB0FB /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		3F72B17B269C40AA006CB0FB /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				3F72B17C269C40B1006CB0FB /* Scenes */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		3F72B17C269C40B1006CB0FB /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		3F72B17D269C40BE006CB0FB /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				3F72B17F269C40CB006CB0FB /* Managers */,
+				3F72B17E269C40C6006CB0FB /* Coordinator */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		3F72B17E269C40C6006CB0FB /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		3F72B17F269C40CB006CB0FB /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,7 +184,6 @@
 			files = (
 				3F72B171269C3FC1006CB0FB /* LaunchScreen.storyboard in Resources */,
 				3F72B16E269C3FC1006CB0FB /* Assets.xcassets in Resources */,
-				3F72B16C269C3FBD006CB0FB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,7 +194,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F72B169269C3FBD006CB0FB /* ViewController.swift in Sources */,
 				3F72B165269C3FBD006CB0FB /* AppDelegate.swift in Sources */,
 				3F72B167269C3FBD006CB0FB /* SceneDelegate.swift in Sources */,
 			);
@@ -146,14 +202,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		3F72B16A269C3FBD006CB0FB /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3F72B16B269C3FBD006CB0FB /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		3F72B16F269C3FC1006CB0FB /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -288,7 +336,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M5DM73ULV2;
-				INFOPLIST_FILE = LadoTsivtsivadze_51/Info.plist;
+				INFOPLIST_FILE = "LadoTsivtsivadze_51/Supporting FIles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,7 +355,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M5DM73ULV2;
-				INFOPLIST_FILE = LadoTsivtsivadze_51/Info.plist;
+				INFOPLIST_FILE = "LadoTsivtsivadze_51/Supporting FIles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
