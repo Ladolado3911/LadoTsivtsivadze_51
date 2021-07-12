@@ -8,7 +8,12 @@
 import UIKit
 
 final class HomeCoordinator: CoordinatorProtocol {
-    init(_ window: UIWindow?, navigationController: UINavigationController?) {
+    
+    var navigationController: UINavigationController?
+    
+    init(_ window: UIWindow? = nil, navigationController: UINavigationController? = UINavigationController()) {
+        
+        
         
     }
     

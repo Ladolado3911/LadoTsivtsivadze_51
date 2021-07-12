@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		24BEF650269C715D004C1E04 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BEF64F269C715D004C1E04 /* NetworkManager.swift */; };
 		3F72B165269C3FBD006CB0FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F72B164269C3FBD006CB0FB /* AppDelegate.swift */; };
 		3F72B167269C3FBD006CB0FB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F72B166269C3FBD006CB0FB /* SceneDelegate.swift */; };
 		3F72B16E269C3FC1006CB0FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F72B16D269C3FC1006CB0FB /* Assets.xcassets */; };
@@ -29,6 +30,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		24BEF64F269C715D004C1E04 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		3F72B161269C3FBD006CB0FB /* LadoTsivtsivadze_51.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LadoTsivtsivadze_51.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F72B164269C3FBD006CB0FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F72B166269C3FBD006CB0FB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +65,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		24BEF64E269C714B004C1E04 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				24BEF64F269C715D004C1E04 /* NetworkManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
 		3F72B158269C3FBD006CB0FB = {
 			isa = PBXGroup;
 			children = (
@@ -139,7 +149,7 @@
 		3F72B17D269C40BE006CB0FB /* Infrastructure */ = {
 			isa = PBXGroup;
 			children = (
-				3F72B17F269C40CB006CB0FB /* Managers */,
+				24BEF64E269C714B004C1E04 /* Managers */,
 				3F72B17E269C40C6006CB0FB /* Coordinator */,
 			);
 			path = Infrastructure;
@@ -154,13 +164,6 @@
 				3F72B199269C42FD006CB0FB /* Storyboarded.swift */,
 			);
 			path = Coordinator;
-			sourceTree = "<group>";
-		};
-		3F72B17F269C40CB006CB0FB /* Managers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Managers;
 			sourceTree = "<group>";
 		};
 		3F72B180269C414E006CB0FB /* Home */ = {
@@ -341,6 +344,7 @@
 				3F72B19A269C42FD006CB0FB /* Storyboarded.swift in Sources */,
 				3F72B1A8269C44DD006CB0FB /* HomeCoordinator.swift in Sources */,
 				3F72B167269C3FBD006CB0FB /* SceneDelegate.swift in Sources */,
+				24BEF650269C715D004C1E04 /* NetworkManager.swift in Sources */,
 				3F72B1A2269C4497006CB0FB /* LibraryCoordinator.swift in Sources */,
 				3F72B18D269C41F1006CB0FB /* FeedController.swift in Sources */,
 				3F72B192269C4243006CB0FB /* HomeController.swift in Sources */,
