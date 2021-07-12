@@ -7,7 +7,7 @@
 
 import UIKit
 
-class HomeDataSource: TableDataSource {
+class HomeTableDataSource: TableDataSource {
 
     var tableView: UITableView!
     var rootController: HomeController!
@@ -28,6 +28,8 @@ class HomeDataSource: TableDataSource {
         
         let sellingNib = UINib(nibName: "BestSellingCell", bundle: nil)
         tableView.register(sellingNib, forCellReuseIdentifier: "BestSellingCell")
+        
+        
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

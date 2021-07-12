@@ -10,8 +10,10 @@ import UIKit
 class HomeViewModel {
     
     private var rootController: HomeController!
+    private var dataSource: HomeTableDataSource!
     
-    init(rootController controller: HomeController) {
+    init(rootController controller: HomeController, dataSource source: HomeTableDataSource) {
         rootController = controller
+        dataSource = source
     }
 }
