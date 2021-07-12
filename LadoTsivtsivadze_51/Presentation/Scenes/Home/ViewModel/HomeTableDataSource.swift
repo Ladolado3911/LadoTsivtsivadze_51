@@ -42,6 +42,7 @@ class HomeTableDataSource: TableDataSource {
         switch indexPath.row {
         case 0:
             let cell = tableView.dequeueReusableCell(withIdentifier: "CoverTableCell") as? CoverTableCell
+            cell!.rootController = rootController
             return cell!
         case 1:
             let cell = tableView.dequeueReusableCell(withIdentifier: "StoryCell") as? StoryCell

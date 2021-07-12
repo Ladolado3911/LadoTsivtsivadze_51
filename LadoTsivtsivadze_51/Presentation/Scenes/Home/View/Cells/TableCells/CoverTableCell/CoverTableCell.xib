@@ -4,7 +4,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -19,16 +18,16 @@
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w1p-Uw-9Wa">
                         <rect key="frame" x="0.0" y="0.0" width="413" height="360"/>
-                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                        <color key="backgroundColor" red="0.90196078431372551" green="0.8901960784313725" blue="0.40392156862745099" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KGz-CR-JuZ">
-                        <rect key="frame" x="63" y="129.5" width="287" height="20.5"/>
+                        <rect key="frame" x="190" y="129.5" width="33" height="20.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Co9-MN-6mN">
-                        <rect key="frame" x="20" y="170" width="373" height="240"/>
+                        <rect key="frame" x="0.0" y="170" width="413" height="240"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="240" id="3ZM-ST-5m3"/>
@@ -45,24 +44,21 @@
                     <constraint firstItem="w1p-Uw-9Wa" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="7wn-2M-qzl"/>
                     <constraint firstItem="Co9-MN-6mN" firstAttribute="top" secondItem="KGz-CR-JuZ" secondAttribute="bottom" constant="20" id="BQz-gT-4St"/>
                     <constraint firstItem="w1p-Uw-9Wa" firstAttribute="bottom" secondItem="Co9-MN-6mN" secondAttribute="bottom" constant="-50" id="DFr-NX-yJY"/>
-                    <constraint firstAttribute="trailingMargin" secondItem="Co9-MN-6mN" secondAttribute="trailing" id="OT6-fd-KYQ"/>
-                    <constraint firstItem="KGz-CR-JuZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="63" id="QL7-cK-zV3"/>
-                    <constraint firstAttribute="trailing" secondItem="KGz-CR-JuZ" secondAttribute="trailing" constant="63" id="Qrb-Zh-l7r"/>
+                    <constraint firstItem="Co9-MN-6mN" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" id="HhD-PN-n3S"/>
+                    <constraint firstAttribute="trailing" secondItem="Co9-MN-6mN" secondAttribute="trailing" id="OT6-fd-KYQ"/>
                     <constraint firstItem="KGz-CR-JuZ" firstAttribute="top" relation="greaterThanOrEqual" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="20" id="fn5-Qw-asj"/>
                     <constraint firstAttribute="trailing" secondItem="w1p-Uw-9Wa" secondAttribute="trailing" id="gv9-w3-3Tu"/>
-                    <constraint firstItem="Co9-MN-6mN" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="hRc-Jy-Xxu"/>
+                    <constraint firstItem="Co9-MN-6mN" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="hRc-Jy-Xxu"/>
                     <constraint firstItem="Co9-MN-6mN" firstAttribute="centerX" secondItem="KGz-CR-JuZ" secondAttribute="centerX" id="pEn-fw-mrp"/>
                     <constraint firstAttribute="bottomMargin" secondItem="Co9-MN-6mN" secondAttribute="bottom" id="qkE-UV-Yja"/>
                     <constraint firstItem="w1p-Uw-9Wa" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="xMX-ou-Uao"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="collectView" destination="Co9-MN-6mN" id="M0z-vR-pvR"/>
+            </connections>
             <point key="canvasLocation" x="184.78260869565219" y="183.14732142857142"/>
         </tableViewCell>
     </objects>
-    <resources>
-        <systemColor name="systemYellowColor">
-            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-    </resources>
 </document>
