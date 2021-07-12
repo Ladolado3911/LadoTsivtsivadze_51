@@ -27,5 +27,4 @@ class StoryCell: UITableViewCell {
         super.layoutSubviews()
         dataSource = HomeStoryDataSource(with: collectView)
     }
-    
 }
