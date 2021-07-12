@@ -13,7 +13,19 @@ final class HomeCoordinator: CoordinatorProtocol {
     
     init(_ window: UIWindow? = nil, navigationController: UINavigationController? = UINavigationController()) {
         
+        self.navigationController = navigationController
+        self.navigationController?.isNavigationBarHidden = true
         
+        let vc = HomeController.instantiateFromStoryboard()
+        vc.coordinator = self
+        vc.tabBarItem.image = UIImage(named: "ic_home")
+        vc.title = "Home"
+        
+        self.navigationController?.viewControllers = [vc]
+        
+//        networkManger = NetworkManager()
+//        homeServiceManager = HomeServicesManager(with: networkManger!)
+//
         
     }
     
