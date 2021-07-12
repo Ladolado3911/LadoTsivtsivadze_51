@@ -5,4 +5,13 @@
 //  Created by lado tsivtsivadze on 7/12/21.
 //
 
-import Foundation
+import UIKit
+
+class HomeViewModel {
+    
+    private var rootController: HomeController!
+    
+    init(rootController controller: HomeController) {
+        rootController = controller
+    }
+}

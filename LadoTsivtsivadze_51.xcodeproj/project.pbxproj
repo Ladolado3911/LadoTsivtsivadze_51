@@ -10,6 +10,12 @@
 		24BEF650269C715D004C1E04 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BEF64F269C715D004C1E04 /* NetworkManager.swift */; };
 		24BEF653269C7593004C1E04 /* Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BEF652269C7593004C1E04 /* Base.swift */; };
 		24BEF656269C7C8D004C1E04 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BEF655269C7C8D004C1E04 /* HomeViewModel.swift */; };
+		24BEF658269C7D3B004C1E04 /* HomeDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BEF657269C7D3B004C1E04 /* HomeDataSource.swift */; };
+		24BEF65A269C7DAD004C1E04 /* Typealiases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BEF659269C7DAD004C1E04 /* Typealiases.swift */; };
+		24BEF660269C7ECF004C1E04 /* StoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BEF65E269C7ECF004C1E04 /* StoryCell.swift */; };
+		24BEF661269C7ECF004C1E04 /* StoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24BEF65F269C7ECF004C1E04 /* StoryCell.xib */; };
+		24BEF664269C7F4A004C1E04 /* BestSellingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BEF662269C7F4A004C1E04 /* BestSellingCell.swift */; };
+		24BEF665269C7F4A004C1E04 /* BestSellingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24BEF663269C7F4A004C1E04 /* BestSellingCell.xib */; };
 		3F72B165269C3FBD006CB0FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F72B164269C3FBD006CB0FB /* AppDelegate.swift */; };
 		3F72B167269C3FBD006CB0FB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F72B166269C3FBD006CB0FB /* SceneDelegate.swift */; };
 		3F72B16E269C3FC1006CB0FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F72B16D269C3FC1006CB0FB /* Assets.xcassets */; };
@@ -35,6 +41,12 @@
 		24BEF64F269C715D004C1E04 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		24BEF652269C7593004C1E04 /* Base.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Base.swift; sourceTree = "<group>"; };
 		24BEF655269C7C8D004C1E04 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		24BEF657269C7D3B004C1E04 /* HomeDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDataSource.swift; sourceTree = "<group>"; };
+		24BEF659269C7DAD004C1E04 /* Typealiases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typealiases.swift; sourceTree = "<group>"; };
+		24BEF65E269C7ECF004C1E04 /* StoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryCell.swift; sourceTree = "<group>"; };
+		24BEF65F269C7ECF004C1E04 /* StoryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoryCell.xib; sourceTree = "<group>"; };
+		24BEF662269C7F4A004C1E04 /* BestSellingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestSellingCell.swift; sourceTree = "<group>"; };
+		24BEF663269C7F4A004C1E04 /* BestSellingCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BestSellingCell.xib; sourceTree = "<group>"; };
 		3F72B161269C3FBD006CB0FB /* LadoTsivtsivadze_51.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LadoTsivtsivadze_51.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F72B164269C3FBD006CB0FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F72B166269C3FBD006CB0FB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -89,8 +101,36 @@
 			isa = PBXGroup;
 			children = (
 				24BEF655269C7C8D004C1E04 /* HomeViewModel.swift */,
+				24BEF657269C7D3B004C1E04 /* HomeDataSource.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		24BEF65B269C7E84004C1E04 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				24BEF65D269C7EA2004C1E04 /* BestSellingCell */,
+				24BEF65C269C7E9A004C1E04 /* StoryCell */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		24BEF65C269C7E9A004C1E04 /* StoryCell */ = {
+			isa = PBXGroup;
+			children = (
+				24BEF65E269C7ECF004C1E04 /* StoryCell.swift */,
+				24BEF65F269C7ECF004C1E04 /* StoryCell.xib */,
+			);
+			path = StoryCell;
+			sourceTree = "<group>";
+		};
+		24BEF65D269C7EA2004C1E04 /* BestSellingCell */ = {
+			isa = PBXGroup;
+			children = (
+				24BEF662269C7F4A004C1E04 /* BestSellingCell.swift */,
+				24BEF663269C7F4A004C1E04 /* BestSellingCell.xib */,
+			);
+			path = BestSellingCell;
 			sourceTree = "<group>";
 		};
 		3F72B158269C3FBD006CB0FB = {
@@ -172,6 +212,7 @@
 			children = (
 				24BEF64E269C714B004C1E04 /* Managers */,
 				3F72B17E269C40C6006CB0FB /* Coordinator */,
+				24BEF659269C7DAD004C1E04 /* Typealiases.swift */,
 			);
 			path = Infrastructure;
 			sourceTree = "<group>";
@@ -244,6 +285,7 @@
 		3F72B18E269C4200006CB0FB /* View */ = {
 			isa = PBXGroup;
 			children = (
+				24BEF65B269C7E84004C1E04 /* Cells */,
 				3F72B18F269C4235006CB0FB /* HomeController.storyboard */,
 				3F72B191269C4243006CB0FB /* HomeController.swift */,
 			);
@@ -340,9 +382,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24BEF665269C7F4A004C1E04 /* BestSellingCell.xib in Resources */,
 				3F72B18B269C41E5006CB0FB /* FeedController.storyboard in Resources */,
 				3F72B171269C3FC1006CB0FB /* LaunchScreen.storyboard in Resources */,
 				3F72B190269C4235006CB0FB /* HomeController.storyboard in Resources */,
+				24BEF661269C7ECF004C1E04 /* StoryCell.xib in Resources */,
 				3F72B19D269C43BF006CB0FB /* MainTabbarController.storyboard in Resources */,
 				3F72B16E269C3FC1006CB0FB /* Assets.xcassets in Resources */,
 				3F72B185269C418B006CB0FB /* LibraryController.storyboard in Resources */,
@@ -368,7 +412,11 @@
 				3F72B1A8269C44DD006CB0FB /* HomeCoordinator.swift in Sources */,
 				3F72B167269C3FBD006CB0FB /* SceneDelegate.swift in Sources */,
 				24BEF650269C715D004C1E04 /* NetworkManager.swift in Sources */,
+				24BEF664269C7F4A004C1E04 /* BestSellingCell.swift in Sources */,
+				24BEF660269C7ECF004C1E04 /* StoryCell.swift in Sources */,
 				3F72B1A2269C4497006CB0FB /* LibraryCoordinator.swift in Sources */,
+				24BEF658269C7D3B004C1E04 /* HomeDataSource.swift in Sources */,
+				24BEF65A269C7DAD004C1E04 /* Typealiases.swift in Sources */,
 				24BEF653269C7593004C1E04 /* Base.swift in Sources */,
 				3F72B18D269C41F1006CB0FB /* FeedController.swift in Sources */,
 				3F72B192269C4243006CB0FB /* HomeController.swift in Sources */,
