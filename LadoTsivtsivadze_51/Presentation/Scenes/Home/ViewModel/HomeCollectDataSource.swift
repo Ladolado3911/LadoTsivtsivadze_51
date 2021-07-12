@@ -47,7 +47,7 @@ class HomeCollectDataSource: CollectDataSource {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         let width = collectionView.bounds.width
-        let spacing = width - (width / 3)
+        let spacing = (width / 2) - (width / 3)
         return spacing
     }
     

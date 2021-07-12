@@ -31,6 +31,9 @@
 		24BEF68E269C904D004C1E04 /* coverCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24BEF68C269C904D004C1E04 /* coverCell.xib */; };
 		24BEF692269C9839004C1E04 /* CoverTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BEF690269C9839004C1E04 /* CoverTableCell.swift */; };
 		24BEF693269C9839004C1E04 /* CoverTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24BEF691269C9839004C1E04 /* CoverTableCell.xib */; };
+		24BEF695269CB9B2004C1E04 /* HomeStoryDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BEF694269CB9B2004C1E04 /* HomeStoryDataSource.swift */; };
+		24BEF699269CBAA4004C1E04 /* StoryCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BEF697269CBAA4004C1E04 /* StoryCollectionCell.swift */; };
+		24BEF69A269CBAA4004C1E04 /* StoryCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24BEF698269CBAA4004C1E04 /* StoryCollectionCell.xib */; };
 		3F72B165269C3FBD006CB0FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F72B164269C3FBD006CB0FB /* AppDelegate.swift */; };
 		3F72B167269C3FBD006CB0FB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F72B166269C3FBD006CB0FB /* SceneDelegate.swift */; };
 		3F72B16E269C3FC1006CB0FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F72B16D269C3FC1006CB0FB /* Assets.xcassets */; };
@@ -77,6 +80,9 @@
 		24BEF68C269C904D004C1E04 /* coverCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = coverCell.xib; sourceTree = "<group>"; };
 		24BEF690269C9839004C1E04 /* CoverTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverTableCell.swift; sourceTree = "<group>"; };
 		24BEF691269C9839004C1E04 /* CoverTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoverTableCell.xib; sourceTree = "<group>"; };
+		24BEF694269CB9B2004C1E04 /* HomeStoryDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeStoryDataSource.swift; sourceTree = "<group>"; };
+		24BEF697269CBAA4004C1E04 /* StoryCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryCollectionCell.swift; sourceTree = "<group>"; };
+		24BEF698269CBAA4004C1E04 /* StoryCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoryCollectionCell.xib; sourceTree = "<group>"; };
 		3F72B161269C3FBD006CB0FB /* LadoTsivtsivadze_51.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LadoTsivtsivadze_51.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F72B164269C3FBD006CB0FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F72B166269C3FBD006CB0FB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -133,6 +139,7 @@
 				24BEF655269C7C8D004C1E04 /* HomeViewModel.swift */,
 				24BEF657269C7D3B004C1E04 /* HomeTableDataSource.swift */,
 				24BEF686269C8F56004C1E04 /* HomeCollectDataSource.swift */,
+				24BEF694269CB9B2004C1E04 /* HomeStoryDataSource.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -149,6 +156,7 @@
 		24BEF65C269C7E9A004C1E04 /* StoryCell */ = {
 			isa = PBXGroup;
 			children = (
+				24BEF696269CBA7B004C1E04 /* StoryCollectionCell */,
 				24BEF65E269C7ECF004C1E04 /* StoryCell.swift */,
 				24BEF65F269C7ECF004C1E04 /* StoryCell.xib */,
 			);
@@ -244,6 +252,15 @@
 				24BEF691269C9839004C1E04 /* CoverTableCell.xib */,
 			);
 			path = CoverTableCell;
+			sourceTree = "<group>";
+		};
+		24BEF696269CBA7B004C1E04 /* StoryCollectionCell */ = {
+			isa = PBXGroup;
+			children = (
+				24BEF697269CBAA4004C1E04 /* StoryCollectionCell.swift */,
+				24BEF698269CBAA4004C1E04 /* StoryCollectionCell.xib */,
+			);
+			path = StoryCollectionCell;
 			sourceTree = "<group>";
 		};
 		3F72B158269C3FBD006CB0FB = {
@@ -504,6 +521,7 @@
 				24BEF68E269C904D004C1E04 /* coverCell.xib in Resources */,
 				3F72B18B269C41E5006CB0FB /* FeedController.storyboard in Resources */,
 				3F72B171269C3FC1006CB0FB /* LaunchScreen.storyboard in Resources */,
+				24BEF69A269CBAA4004C1E04 /* StoryCollectionCell.xib in Resources */,
 				3F72B190269C4235006CB0FB /* HomeController.storyboard in Resources */,
 				24BEF661269C7ECF004C1E04 /* StoryCell.xib in Resources */,
 				24BEF671269C8399004C1E04 /* AuthorCell.xib in Resources */,
@@ -523,8 +541,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				24BEF670269C8399004C1E04 /* AuthorCell.swift in Sources */,
+				24BEF699269CBAA4004C1E04 /* StoryCollectionCell.swift in Sources */,
 				3F72B194269C42CB006CB0FB /* AppCoordinator.swift in Sources */,
 				3F72B165269C3FBD006CB0FB /* AppDelegate.swift in Sources */,
+				24BEF695269CB9B2004C1E04 /* HomeStoryDataSource.swift in Sources */,
 				3F72B19F269C43D6006CB0FB /* MainTabbarController.swift in Sources */,
 				24BEF656269C7C8D004C1E04 /* HomeViewModel.swift in Sources */,
 				3F72B198269C42F0006CB0FB /* CoordinatorProtocol.swift in Sources */,
