@@ -24,6 +24,8 @@
 		24BEF675269C83E4004C1E04 /* BookCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24BEF673269C83E4004C1E04 /* BookCell.xib */; };
 		24BEF678269C84A3004C1E04 /* LibraryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BEF677269C84A3004C1E04 /* LibraryViewModel.swift */; };
 		24BEF67A269C8501004C1E04 /* LibraryDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BEF679269C8501004C1E04 /* LibraryDataSource.swift */; };
+		24BEF67E269C86A4004C1E04 /* LibraryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BEF67C269C86A4004C1E04 /* LibraryCell.swift */; };
+		24BEF67F269C86A4004C1E04 /* LibraryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24BEF67D269C86A4004C1E04 /* LibraryCell.xib */; };
 		3F72B165269C3FBD006CB0FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F72B164269C3FBD006CB0FB /* AppDelegate.swift */; };
 		3F72B167269C3FBD006CB0FB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F72B166269C3FBD006CB0FB /* SceneDelegate.swift */; };
 		3F72B16E269C3FC1006CB0FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F72B16D269C3FC1006CB0FB /* Assets.xcassets */; };
@@ -63,6 +65,8 @@
 		24BEF673269C83E4004C1E04 /* BookCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BookCell.xib; sourceTree = "<group>"; };
 		24BEF677269C84A3004C1E04 /* LibraryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryViewModel.swift; sourceTree = "<group>"; };
 		24BEF679269C8501004C1E04 /* LibraryDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryDataSource.swift; sourceTree = "<group>"; };
+		24BEF67C269C86A4004C1E04 /* LibraryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryCell.swift; sourceTree = "<group>"; };
+		24BEF67D269C86A4004C1E04 /* LibraryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LibraryCell.xib; sourceTree = "<group>"; };
 		3F72B161269C3FBD006CB0FB /* LadoTsivtsivadze_51.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LadoTsivtsivadze_51.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F72B164269C3FBD006CB0FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F72B166269C3FBD006CB0FB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -192,6 +196,15 @@
 				24BEF679269C8501004C1E04 /* LibraryDataSource.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		24BEF67B269C866B004C1E04 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				24BEF67C269C86A4004C1E04 /* LibraryCell.swift */,
+				24BEF67D269C86A4004C1E04 /* LibraryCell.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		3F72B158269C3FBD006CB0FB = {
@@ -330,6 +343,7 @@
 		3F72B188269C41BF006CB0FB /* View */ = {
 			isa = PBXGroup;
 			children = (
+				24BEF67B269C866B004C1E04 /* Cells */,
 				3F72B184269C418A006CB0FB /* LibraryController.storyboard */,
 				3F72B186269C41A3006CB0FB /* LibraryController.swift */,
 			);
@@ -452,6 +466,7 @@
 				3F72B190269C4235006CB0FB /* HomeController.storyboard in Resources */,
 				24BEF661269C7ECF004C1E04 /* StoryCell.xib in Resources */,
 				24BEF671269C8399004C1E04 /* AuthorCell.xib in Resources */,
+				24BEF67F269C86A4004C1E04 /* LibraryCell.xib in Resources */,
 				24BEF675269C83E4004C1E04 /* BookCell.xib in Resources */,
 				3F72B19D269C43BF006CB0FB /* MainTabbarController.storyboard in Resources */,
 				3F72B16E269C3FC1006CB0FB /* Assets.xcassets in Resources */,
@@ -475,6 +490,7 @@
 				3F72B1A4269C44B2006CB0FB /* FeedCoordinator.swift in Sources */,
 				3F72B196269C42E0006CB0FB /* CoordinatorDelegate.swift in Sources */,
 				24BEF678269C84A3004C1E04 /* LibraryViewModel.swift in Sources */,
+				24BEF67E269C86A4004C1E04 /* LibraryCell.swift in Sources */,
 				3F72B187269C41A3006CB0FB /* LibraryController.swift in Sources */,
 				3F72B19A269C42FD006CB0FB /* Storyboarded.swift in Sources */,
 				3F72B1A8269C44DD006CB0FB /* HomeCoordinator.swift in Sources */,

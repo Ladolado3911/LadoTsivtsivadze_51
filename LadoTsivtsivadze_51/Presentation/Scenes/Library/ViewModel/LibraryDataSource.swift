@@ -12,6 +12,8 @@ class LibraryDataSource: CollectDataSource {
     private var collectionView: UICollectionView!
     private var rootController: LibraryController!
     
+    private var data: [Int] = [1, 2, 3]
+    
     init(with collectionView: UICollectionView, rootController controller: LibraryController) {
         super.init()
         
@@ -24,13 +26,17 @@ class LibraryDataSource: CollectDataSource {
     func configCollection() {
         collectionView.dataSource = self
         collectionView.delegate = self
+        
+        let libNib = UINib(nibName: "LibraryCell", bundle: nil)
+        collectionView.register(libNib, forCellWithReuseIdentifier: "LibraryCell")
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        0
+        data.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        return UICollectionViewCell()
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "LibraryCell", for: indexPath) as? LibraryCell
+        return cell!
     }
 }
