@@ -29,19 +29,24 @@ class HomeTableDataSource: TableDataSource {
         let sellingNib = UINib(nibName: "BestSellingCell", bundle: nil)
         tableView.register(sellingNib, forCellReuseIdentifier: "BestSellingCell")
         
-        
+        let coverNib = UINib(nibName: "CoverTableCell", bundle: nil)
+        tableView.register(coverNib, forCellReuseIdentifier: "CoverTableCell")
+
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        2
+        3
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         switch indexPath.row {
         case 0:
-            let cell = tableView.dequeueReusableCell(withIdentifier: "StoryCell") as? StoryCell
+            let cell = tableView.dequeueReusableCell(withIdentifier: "CoverTableCell") as? CoverTableCell
             return cell!
         case 1:
+            let cell = tableView.dequeueReusableCell(withIdentifier: "StoryCell") as? StoryCell
+            return cell!
+        case 2:
             let cell = tableView.dequeueReusableCell(withIdentifier: "BestSellingCell") as? BestSellingCell
             return cell!
         default:

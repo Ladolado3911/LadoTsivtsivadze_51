@@ -25,8 +25,6 @@ class HomeCollectDataSource: CollectDataSource {
         
         let coverNib = UINib(nibName: "coverCell", bundle: nil)
         collectionView.register(coverNib, forCellWithReuseIdentifier: "coverCell")
-        
-        
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -34,6 +32,7 @@ class HomeCollectDataSource: CollectDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        return UICollectionViewCell()
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "coverCell", for: indexPath) as? coverCell
+        return cell!
     }
 }

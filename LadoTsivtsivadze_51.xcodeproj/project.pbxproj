@@ -29,6 +29,8 @@
 		24BEF687269C8F56004C1E04 /* HomeCollectDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BEF686269C8F56004C1E04 /* HomeCollectDataSource.swift */; };
 		24BEF68D269C904D004C1E04 /* coverCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BEF68B269C904D004C1E04 /* coverCell.swift */; };
 		24BEF68E269C904D004C1E04 /* coverCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24BEF68C269C904D004C1E04 /* coverCell.xib */; };
+		24BEF692269C9839004C1E04 /* CoverTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BEF690269C9839004C1E04 /* CoverTableCell.swift */; };
+		24BEF693269C9839004C1E04 /* CoverTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24BEF691269C9839004C1E04 /* CoverTableCell.xib */; };
 		3F72B165269C3FBD006CB0FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F72B164269C3FBD006CB0FB /* AppDelegate.swift */; };
 		3F72B167269C3FBD006CB0FB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F72B166269C3FBD006CB0FB /* SceneDelegate.swift */; };
 		3F72B16E269C3FC1006CB0FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F72B16D269C3FC1006CB0FB /* Assets.xcassets */; };
@@ -73,6 +75,8 @@
 		24BEF686269C8F56004C1E04 /* HomeCollectDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectDataSource.swift; sourceTree = "<group>"; };
 		24BEF68B269C904D004C1E04 /* coverCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = coverCell.swift; sourceTree = "<group>"; };
 		24BEF68C269C904D004C1E04 /* coverCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = coverCell.xib; sourceTree = "<group>"; };
+		24BEF690269C9839004C1E04 /* CoverTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverTableCell.swift; sourceTree = "<group>"; };
+		24BEF691269C9839004C1E04 /* CoverTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoverTableCell.xib; sourceTree = "<group>"; };
 		3F72B161269C3FBD006CB0FB /* LadoTsivtsivadze_51.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LadoTsivtsivadze_51.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F72B164269C3FBD006CB0FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F72B166269C3FBD006CB0FB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -217,6 +221,7 @@
 		24BEF689269C901F004C1E04 /* TableCells */ = {
 			isa = PBXGroup;
 			children = (
+				24BEF68F269C97ED004C1E04 /* CoverTableCell */,
 				24BEF65D269C7EA2004C1E04 /* BestSellingCell */,
 				24BEF65C269C7E9A004C1E04 /* StoryCell */,
 			);
@@ -230,6 +235,15 @@
 				24BEF68C269C904D004C1E04 /* coverCell.xib */,
 			);
 			path = CollectionCells;
+			sourceTree = "<group>";
+		};
+		24BEF68F269C97ED004C1E04 /* CoverTableCell */ = {
+			isa = PBXGroup;
+			children = (
+				24BEF690269C9839004C1E04 /* CoverTableCell.swift */,
+				24BEF691269C9839004C1E04 /* CoverTableCell.xib */,
+			);
+			path = CoverTableCell;
 			sourceTree = "<group>";
 		};
 		3F72B158269C3FBD006CB0FB = {
@@ -485,6 +499,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24BEF693269C9839004C1E04 /* CoverTableCell.xib in Resources */,
 				24BEF665269C7F4A004C1E04 /* BestSellingCell.xib in Resources */,
 				24BEF68E269C904D004C1E04 /* coverCell.xib in Resources */,
 				3F72B18B269C41E5006CB0FB /* FeedController.storyboard in Resources */,
@@ -523,6 +538,7 @@
 				3F72B1A8269C44DD006CB0FB /* HomeCoordinator.swift in Sources */,
 				24BEF67A269C8501004C1E04 /* LibraryDataSource.swift in Sources */,
 				3F72B167269C3FBD006CB0FB /* SceneDelegate.swift in Sources */,
+				24BEF692269C9839004C1E04 /* CoverTableCell.swift in Sources */,
 				24BEF674269C83E4004C1E04 /* BookCell.swift in Sources */,
 				24BEF650269C715D004C1E04 /* NetworkManager.swift in Sources */,
 				24BEF664269C7F4A004C1E04 /* BestSellingCell.swift in Sources */,
