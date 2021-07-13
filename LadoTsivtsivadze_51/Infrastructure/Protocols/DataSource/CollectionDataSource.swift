@@ -17,7 +17,6 @@ struct Cell {
     }
 }
 
-
 protocol CollectionDataSource: CollectDataSource {
     
     var collectionView: UICollectionView! { get set }
