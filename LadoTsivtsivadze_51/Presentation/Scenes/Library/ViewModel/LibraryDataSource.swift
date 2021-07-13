@@ -13,7 +13,7 @@ class LibraryDataSource: CollectDataSource, CollectionDataSource {
     var cellsArr: [Cell]!
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        5
+        3
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -29,6 +29,12 @@ class LibraryDataSource: CollectDataSource, CollectionDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        return 20
+        let width = collectionView.bounds.width
+        return width / 16
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        let width = collectionView.bounds.width
+        return UIEdgeInsets(top: 0, left: width / 16, bottom: 0, right: width / 16)
     }
 }

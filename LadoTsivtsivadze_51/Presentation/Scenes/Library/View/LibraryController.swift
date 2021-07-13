@@ -56,10 +56,11 @@ struct DataSources {
 
 class LibraryController: BaseViewController {
     
-    private var dataSource: LibraryMainTableDataSource? {
+    private var dataSourceSetter: LibraryMainTableDataSource? {
         guard let childDataSources = childDataSources else { return nil }
         return childDataSources.readingDataSource
     }
+    private var dataSource: LibraryMainTableDataSource?
     private var childDataSources: DataSources?
     private var tabBar: Tab?
     @IBOutlet weak var tblView: UITableView!
@@ -68,6 +69,6 @@ class LibraryController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         childDataSources = DataSources(with: tblView)
-        //dataSource = LibraryMainTableDataSource(with: <#T##UITableView#>, with: <#T##[Cell]#>)
+        dataSource = dataSourceSetter
     }
 }
