@@ -9,6 +9,9 @@ import UIKit
 
 class BestSellingCell: UITableViewCell {
 
+    @IBOutlet weak var collectView: UICollectionView!
+    private var dataSource: CollectionDataSource?
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -18,6 +21,13 @@ class BestSellingCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        let cell = Cell(nibName: "BestCollectCell", identifier: "BestCollectCell")
+        dataSource = HomeBestCollectDataSource(with: collectView, with: [cell])
+        
     }
     
 }
