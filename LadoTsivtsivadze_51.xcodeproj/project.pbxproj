@@ -12,6 +12,19 @@
 		24340D99269DBDD200A220D8 /* BestCollectCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24340D97269DBDD200A220D8 /* BestCollectCell.swift */; };
 		24340D9A269DBDD200A220D8 /* BestCollectCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24340D98269DBDD200A220D8 /* BestCollectCell.xib */; };
 		24340D9C269DC06600A220D8 /* TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24340D9B269DC06600A220D8 /* TableViewDataSource.swift */; };
+		24340D9E269DC28200A220D8 /* LibraryMainTableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24340D9D269DC28200A220D8 /* LibraryMainTableDataSource.swift */; };
+		24340DA6269DC99900A220D8 /* CommonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24340DA4269DC99900A220D8 /* CommonCell.swift */; };
+		24340DA7269DC99900A220D8 /* CommonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24340DA5269DC99900A220D8 /* CommonCell.xib */; };
+		24340DAA269DCD9900A220D8 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24340DA8269DCD9900A220D8 /* TableViewCell.swift */; };
+		24340DAB269DCD9900A220D8 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24340DA9269DCD9900A220D8 /* TableViewCell.xib */; };
+		24340DAD269DCDCE00A220D8 /* LibraryReadingDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24340DAC269DCDCE00A220D8 /* LibraryReadingDataSource.swift */; };
+		24340DB1269DCF4B00A220D8 /* ReadingCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24340DAF269DCF4B00A220D8 /* ReadingCollectionCell.swift */; };
+		24340DB2269DCF4B00A220D8 /* ReadingCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24340DB0269DCF4B00A220D8 /* ReadingCollectionCell.xib */; };
+		24340DB5269DCFE800A220D8 /* ShelfCell1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24340DB3269DCFE800A220D8 /* ShelfCell1.swift */; };
+		24340DB6269DCFE800A220D8 /* ShelfCell1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24340DB4269DCFE800A220D8 /* ShelfCell1.xib */; };
+		24340DB8269DD09000A220D8 /* LibraryShelf1DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24340DB7269DD09000A220D8 /* LibraryShelf1DataSource.swift */; };
+		24340DBC269DD11600A220D8 /* Shelf1CollectCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24340DBA269DD11600A220D8 /* Shelf1CollectCell.swift */; };
+		24340DBD269DD11600A220D8 /* Shelf1CollectCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24340DBB269DD11600A220D8 /* Shelf1CollectCell.xib */; };
 		24BEF650269C715D004C1E04 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BEF64F269C715D004C1E04 /* NetworkManager.swift */; };
 		24BEF653269C7593004C1E04 /* Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BEF652269C7593004C1E04 /* Base.swift */; };
 		24BEF656269C7C8D004C1E04 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BEF655269C7C8D004C1E04 /* HomeViewModel.swift */; };
@@ -66,6 +79,19 @@
 		24340D97269DBDD200A220D8 /* BestCollectCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestCollectCell.swift; sourceTree = "<group>"; };
 		24340D98269DBDD200A220D8 /* BestCollectCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BestCollectCell.xib; sourceTree = "<group>"; };
 		24340D9B269DC06600A220D8 /* TableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDataSource.swift; sourceTree = "<group>"; };
+		24340D9D269DC28200A220D8 /* LibraryMainTableDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryMainTableDataSource.swift; sourceTree = "<group>"; };
+		24340DA4269DC99900A220D8 /* CommonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonCell.swift; sourceTree = "<group>"; };
+		24340DA5269DC99900A220D8 /* CommonCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommonCell.xib; sourceTree = "<group>"; };
+		24340DA8269DCD9900A220D8 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		24340DA9269DCD9900A220D8 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		24340DAC269DCDCE00A220D8 /* LibraryReadingDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryReadingDataSource.swift; sourceTree = "<group>"; };
+		24340DAF269DCF4B00A220D8 /* ReadingCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingCollectionCell.swift; sourceTree = "<group>"; };
+		24340DB0269DCF4B00A220D8 /* ReadingCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReadingCollectionCell.xib; sourceTree = "<group>"; };
+		24340DB3269DCFE800A220D8 /* ShelfCell1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShelfCell1.swift; sourceTree = "<group>"; };
+		24340DB4269DCFE800A220D8 /* ShelfCell1.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShelfCell1.xib; sourceTree = "<group>"; };
+		24340DB7269DD09000A220D8 /* LibraryShelf1DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryShelf1DataSource.swift; sourceTree = "<group>"; };
+		24340DBA269DD11600A220D8 /* Shelf1CollectCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shelf1CollectCell.swift; sourceTree = "<group>"; };
+		24340DBB269DD11600A220D8 /* Shelf1CollectCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Shelf1CollectCell.xib; sourceTree = "<group>"; };
 		24BEF64F269C715D004C1E04 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		24BEF652269C7593004C1E04 /* Base.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Base.swift; sourceTree = "<group>"; };
 		24BEF655269C7C8D004C1E04 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
@@ -151,6 +177,70 @@
 				24340D98269DBDD200A220D8 /* BestCollectCell.xib */,
 			);
 			path = BestCollectCell;
+			sourceTree = "<group>";
+		};
+		24340D9F269DC91F00A220D8 /* CollectionCell */ = {
+			isa = PBXGroup;
+			children = (
+				24BEF67C269C86A4004C1E04 /* LibraryCell.swift */,
+				24BEF67D269C86A4004C1E04 /* LibraryCell.xib */,
+			);
+			path = CollectionCell;
+			sourceTree = "<group>";
+		};
+		24340DA0269DC92C00A220D8 /* ReadingCells */ = {
+			isa = PBXGroup;
+			children = (
+				24340DAE269DCF1F00A220D8 /* ReadingCollectionCell */,
+				24340DA8269DCD9900A220D8 /* TableViewCell.swift */,
+				24340DA9269DCD9900A220D8 /* TableViewCell.xib */,
+			);
+			path = ReadingCells;
+			sourceTree = "<group>";
+		};
+		24340DA1269DC93F00A220D8 /* BookshelfCells */ = {
+			isa = PBXGroup;
+			children = (
+				24340DB9269DD0F000A220D8 /* Shelf1CollectCell */,
+				24340DB3269DCFE800A220D8 /* ShelfCell1.swift */,
+				24340DB4269DCFE800A220D8 /* ShelfCell1.xib */,
+			);
+			path = BookshelfCells;
+			sourceTree = "<group>";
+		};
+		24340DA2269DC94900A220D8 /* MyCells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MyCells;
+			sourceTree = "<group>";
+		};
+		24340DA3269DC96F00A220D8 /* CommonCell */ = {
+			isa = PBXGroup;
+			children = (
+				24340D9F269DC91F00A220D8 /* CollectionCell */,
+				24340DA4269DC99900A220D8 /* CommonCell.swift */,
+				24340DA5269DC99900A220D8 /* CommonCell.xib */,
+			);
+			path = CommonCell;
+			sourceTree = "<group>";
+		};
+		24340DAE269DCF1F00A220D8 /* ReadingCollectionCell */ = {
+			isa = PBXGroup;
+			children = (
+				24340DAF269DCF4B00A220D8 /* ReadingCollectionCell.swift */,
+				24340DB0269DCF4B00A220D8 /* ReadingCollectionCell.xib */,
+			);
+			path = ReadingCollectionCell;
+			sourceTree = "<group>";
+		};
+		24340DB9269DD0F000A220D8 /* Shelf1CollectCell */ = {
+			isa = PBXGroup;
+			children = (
+				24340DBA269DD11600A220D8 /* Shelf1CollectCell.swift */,
+				24340DBB269DD11600A220D8 /* Shelf1CollectCell.xib */,
+			);
+			path = Shelf1CollectCell;
 			sourceTree = "<group>";
 		};
 		24BEF64E269C714B004C1E04 /* Managers */ = {
@@ -251,6 +341,9 @@
 			children = (
 				24BEF677269C84A3004C1E04 /* LibraryViewModel.swift */,
 				24BEF679269C8501004C1E04 /* LibraryDataSource.swift */,
+				24340D9D269DC28200A220D8 /* LibraryMainTableDataSource.swift */,
+				24340DAC269DCDCE00A220D8 /* LibraryReadingDataSource.swift */,
+				24340DB7269DD09000A220D8 /* LibraryShelf1DataSource.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -258,8 +351,10 @@
 		24BEF67B269C866B004C1E04 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				24BEF67C269C86A4004C1E04 /* LibraryCell.swift */,
-				24BEF67D269C86A4004C1E04 /* LibraryCell.xib */,
+				24340DA3269DC96F00A220D8 /* CommonCell */,
+				24340DA2269DC94900A220D8 /* MyCells */,
+				24340DA1269DC93F00A220D8 /* BookshelfCells */,
+				24340DA0269DC92C00A220D8 /* ReadingCells */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -563,13 +658,18 @@
 				24BEF69A269CBAA4004C1E04 /* StoryCollectionCell.xib in Resources */,
 				3F72B190269C4235006CB0FB /* HomeController.storyboard in Resources */,
 				24BEF661269C7ECF004C1E04 /* StoryCell.xib in Resources */,
+				24340DA7269DC99900A220D8 /* CommonCell.xib in Resources */,
 				24340D9A269DBDD200A220D8 /* BestCollectCell.xib in Resources */,
+				24340DB2269DCF4B00A220D8 /* ReadingCollectionCell.xib in Resources */,
 				24BEF671269C8399004C1E04 /* AuthorCell.xib in Resources */,
 				24BEF67F269C86A4004C1E04 /* LibraryCell.xib in Resources */,
+				24340DB6269DCFE800A220D8 /* ShelfCell1.xib in Resources */,
+				24340DAB269DCD9900A220D8 /* TableViewCell.xib in Resources */,
 				24BEF675269C83E4004C1E04 /* BookCell.xib in Resources */,
 				3F72B19D269C43BF006CB0FB /* MainTabbarController.storyboard in Resources */,
 				3F72B16E269C3FC1006CB0FB /* Assets.xcassets in Resources */,
 				3F72B185269C418B006CB0FB /* LibraryController.storyboard in Resources */,
+				24340DBD269DD11600A220D8 /* Shelf1CollectCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -580,7 +680,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24340DAA269DCD9900A220D8 /* TableViewCell.swift in Sources */,
+				24340D9E269DC28200A220D8 /* LibraryMainTableDataSource.swift in Sources */,
 				24BEF670269C8399004C1E04 /* AuthorCell.swift in Sources */,
+				24340DB8269DD09000A220D8 /* LibraryShelf1DataSource.swift in Sources */,
+				24340DAD269DCDCE00A220D8 /* LibraryReadingDataSource.swift in Sources */,
 				24BEF699269CBAA4004C1E04 /* StoryCollectionCell.swift in Sources */,
 				3F72B194269C42CB006CB0FB /* AppCoordinator.swift in Sources */,
 				3F72B165269C3FBD006CB0FB /* AppDelegate.swift in Sources */,
@@ -589,21 +693,25 @@
 				24BEF656269C7C8D004C1E04 /* HomeViewModel.swift in Sources */,
 				24340D9C269DC06600A220D8 /* TableViewDataSource.swift in Sources */,
 				3F72B198269C42F0006CB0FB /* CoordinatorProtocol.swift in Sources */,
+				24340DA6269DC99900A220D8 /* CommonCell.swift in Sources */,
 				24340D99269DBDD200A220D8 /* BestCollectCell.swift in Sources */,
 				3F72B1A4269C44B2006CB0FB /* FeedCoordinator.swift in Sources */,
 				3F72B196269C42E0006CB0FB /* CoordinatorDelegate.swift in Sources */,
 				24340D95269DB7F100A220D8 /* HomeBestCollectDataSource.swift in Sources */,
+				24340DB1269DCF4B00A220D8 /* ReadingCollectionCell.swift in Sources */,
 				24BEF687269C8F56004C1E04 /* HomeCollectDataSource.swift in Sources */,
 				24BEF678269C84A3004C1E04 /* LibraryViewModel.swift in Sources */,
 				24BEF67E269C86A4004C1E04 /* LibraryCell.swift in Sources */,
 				3F72B187269C41A3006CB0FB /* LibraryController.swift in Sources */,
 				24340D93269DB66000A220D8 /* CollectionDataSource.swift in Sources */,
 				3F72B19A269C42FD006CB0FB /* Storyboarded.swift in Sources */,
+				24340DB5269DCFE800A220D8 /* ShelfCell1.swift in Sources */,
 				3F72B1A8269C44DD006CB0FB /* HomeCoordinator.swift in Sources */,
 				24BEF67A269C8501004C1E04 /* LibraryDataSource.swift in Sources */,
 				3F72B167269C3FBD006CB0FB /* SceneDelegate.swift in Sources */,
 				24BEF692269C9839004C1E04 /* CoverTableCell.swift in Sources */,
 				24BEF674269C83E4004C1E04 /* BookCell.swift in Sources */,
+				24340DBC269DD11600A220D8 /* Shelf1CollectCell.swift in Sources */,
 				24BEF650269C715D004C1E04 /* NetworkManager.swift in Sources */,
 				24BEF664269C7F4A004C1E04 /* BestSellingCell.swift in Sources */,
 				24BEF660269C7ECF004C1E04 /* StoryCell.swift in Sources */,

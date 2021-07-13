@@ -7,36 +7,28 @@
 
 import UIKit
 
-class LibraryDataSource: CollectDataSource {
+class LibraryDataSource: CollectDataSource, CollectionDataSource {
     
-    private var collectionView: UICollectionView!
-    private var rootController: LibraryController!
-    
-    private var data: [Int] = [1, 2, 3]
-    
-    init(with collectionView: UICollectionView, rootController controller: LibraryController) {
-        super.init()
-        
-        self.collectionView = collectionView
-        self.rootController = controller
-        
-        configCollection()
-    }
-    
-    func configCollection() {
-        collectionView.dataSource = self
-        collectionView.delegate = self
-        
-        let libNib = UINib(nibName: "LibraryCell", bundle: nil)
-        collectionView.register(libNib, forCellWithReuseIdentifier: "LibraryCell")
-    }
+    var collectionView: UICollectionView!
+    var cellsArr: [Cell]!
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        data.count
+        5
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "LibraryCell", for: indexPath) as? LibraryCell
-        return cell!
+        let cell = cellsArr.first
+        let realCell = collectionView.dequeueReusableCell(withReuseIdentifier: (cell?.identifier)!, for: indexPath)
+        return realCell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let width = collectionView.bounds.width / 4
+        let height = collectionView.bounds.height
+        return CGSize(width: width, height: height)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 20
     }
 }
