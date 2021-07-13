@@ -11,6 +11,7 @@ class LibraryDataSource: CollectDataSource, CollectionDataSource {
     
     var collectionView: UICollectionView!
     var cellsArr: [Cell]!
+    var rootController: LibraryController?
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         3
@@ -20,6 +21,12 @@ class LibraryDataSource: CollectDataSource, CollectionDataSource {
         let cell = cellsArr.first
         let realCell = collectionView.dequeueReusableCell(withReuseIdentifier: (cell?.identifier)!, for: indexPath)
         return realCell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        //guard let rootController = rootController else { return }
+        print("\(indexPath.row)")
+        
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {

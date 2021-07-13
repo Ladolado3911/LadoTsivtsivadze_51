@@ -45,6 +45,7 @@ struct DataSources {
         let myDataSource = LibraryMainTableDataSource(with: tblView,
                                    with: [Cells.commonCell,
                                                                   ])
+        
         return myDataSource
     }
     
@@ -70,5 +71,9 @@ class LibraryController: BaseViewController {
         super.viewDidLoad()
         childDataSources = DataSources(with: tblView)
         dataSource = dataSourceSetter
+    }
+    
+    func setDataSource() {
+        
     }
 }
