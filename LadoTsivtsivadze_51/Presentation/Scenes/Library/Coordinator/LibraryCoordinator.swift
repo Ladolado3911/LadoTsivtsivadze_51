@@ -16,7 +16,7 @@ final class LibraryCoordinator: CoordinatorProtocol {
         self.navigationController = navigationController
         self.navigationController?.isNavigationBarHidden = true
         
-        let vc = HomeController.instantiateFromStoryboard()
+        let vc = LibraryController.instantiateFromStoryboard()
         vc.coordinator = self
         vc.tabBarItem.image = UIImage(named: "libraryIcon")
         vc.title = "Library"

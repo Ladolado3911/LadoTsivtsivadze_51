@@ -16,7 +16,7 @@ final class FeedCoordinator: CoordinatorProtocol {
         self.navigationController = navigationController
         self.navigationController?.isNavigationBarHidden = true
         
-        let vc = HomeController.instantiateFromStoryboard()
+        let vc = FeedController.instantiateFromStoryboard()
         vc.coordinator = self
         vc.tabBarItem.image = UIImage(named: "feedIcon")
         vc.title = "Feed"
